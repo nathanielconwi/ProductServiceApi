@@ -3,3 +3,6 @@
 *.jwk
 appsettings.json
 .env
+bin/
+obj/
+TestResults/

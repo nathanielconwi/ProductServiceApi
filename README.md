@@ -1,3 +1,5 @@
+[![CI](https://github.com/nate77143/ProductServiceApi/actions/workflows/ci.yml/badge.svg)](https://github.com/nate77143/ProductServiceApi/actions/workflows/ci.yml)
+
 # Product Service API
 
 A .NET 8 Web API serves a paginated product catalog from SQL Server. Both versions accept `pageNumber` and `pageSize`, defaulting to page 1 and three products per page. Products are ordered by ID.
