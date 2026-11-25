@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using ProductServiceApi.Data;
 using ProductServiceApi.Model;
 using System;
@@ -25,6 +25,7 @@ namespace ProductApi.Service
 
             // Skip records for previous pages, and take only the current page's size of records
             return await _context.Products
+                .OrderBy(product => product.Id)
                 .Skip((pageNumber - 1) * pageSize)  
                 .Take(pageSize)                    
                 .ToListAsync();
